@@ -155,9 +155,9 @@ input,
 select,
 textarea {
 	-moz-appearance: none;
-	-webkit-appearance: none;
+	-webkit-appearance: auto;
 	-ms-appearance: none;
-	appearance: none;
+	appearance: auto;
 }
 
 /* Basic */
@@ -1974,10 +1974,10 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
+form input[type="date"],
 form select,
 form textarea {
 	position: relative;
-	-webkit-appearance: none;
 	display: block;
 	border: 0;
 	outline: 0;
@@ -1988,6 +1988,40 @@ form textarea {
 	border-radius: 0.35em;
 	padding: 0.75em 1em 0.75em 1em;
 	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+}
+form select {
+	position: relative;
+	display: block;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	width: 100%;
+	height: 65%;
+	border-radius: 0.35em;
+	padding: 0.4rem;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+	border: solid 1px rgba(0, 0, 0, 0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	margin-bottom: 5%;
+}
+form input[type="checkbox"]{
+	position: relative;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.75);
+	height: 65%;
+	border-radius: 0.35em;
+	padding: 0.75em 1em 0.75em 1em;
 	border: solid 1px rgba(0, 0, 0, 0.15);
 	-moz-transition: all 0.35s ease-in-out;
 	-webkit-transition: all 0.35s ease-in-out;
@@ -2797,6 +2831,9 @@ legend input{
 	border: 0.5px solid #222729;
 	opacity: 0.9;
 }
+select {
+	padding: 0.4rem;
+}
 
 .separador{
 	padding-top: 1px;
@@ -2804,4 +2841,10 @@ legend input{
 	border-top: 1px solid #333;
 	opacity: 0.5;
 	margin: 20px 7.5% 0px 7.5%;
+}
+.caixa{
+	width: auto;
+	box-shadow: none; 
+	-webkit-appearance:auto;
+	z-index: 1;
 }

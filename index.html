@@ -199,7 +199,7 @@
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="bairro-aluno"
 								placeholder="Digite o Bairro..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="cidade-aluno"
-								placeholder="Digite o Bairro..."></div>
+								placeholder="Digite a Cidade..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="numero-aluno"
 								placeholder="Digite o numero do endereco..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" pattern="[0-9]{5}-[0-9]{3}"
@@ -207,22 +207,41 @@
 								placeholder="Digite o cep..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="complemento-aluno"
 								placeholder="Digite o Complemento..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="form" name="estado-aluno"
-								placeholder="Digite o estado..."></div>
+						<div class="col-6 col-12-mobile">
+							<select name="estado-aluno">
+								<option value="SP" selected>Selecione o Estado</option>
+								<option value="SP">SP</option>
+								<option value="RS">RJ</option>
+								<option value="PR">PR</option>
+								<option value="MG">MG</option>
+								<option value="AM">AM</option>
+								<option value="AC">AC</option>
+								<option value="MA">MA</option>
+								<option value="BA">BA</option>
+							</select>
+						</div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="telefone-aluno"
 								placeholder="Digite o telefone..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="celular-aluno"
 								placeholder="Digite o celular..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" class="form" name="email-aluno"
 								placeholder="Digite o email..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" class="form" name="cor-aluno"
-								placeholder="Digite a Cor..."></div>
+						<div class="col-6 col-12-mobile">
+							<select name="cor-aluno">
+								<option value="nao-informar" selected>Selecione a etnia...</option>
+								<option value="branco">Branco</option>
+								<option value="preto">Preta</option>
+								<option value="pardo">Pardo</option>
+								<option value="amarelo">Amarelo</option>
+								<option value="indigena">Indigena</option>
+							</select>
+						</div>
 					</div>
+
 					<div class="separador"></div>
 					<header>
 						<h3>Dados dos Pais</h3>
 					</header>
-
 
 					<div class="row">
 
@@ -230,22 +249,40 @@
 								placeholder="Digite um nome do Pai..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="nome-mae"
 								placeholder="Digite um nome da Mãe..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="dt-nasc-pai"
+						<div class="col-6 col-12-mobile"><input type="date" name="dt-nasc-pai"
 								placeholder="Data de Nascimento do Pai..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="dt-nasc-mae"
+						<div class="col-6 col-12-mobile"><input type="date" name="dt-nasc-mae"
 								placeholder="Data de Nascimento da Mãe..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="naturalidade-pai"
 								placeholder="Digite a naturalidade do Pai..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="naturalidade-mae"
 								placeholder="Digite a naturalidade da Mãe..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="instrucao-pai"
-								placeholder="Digite a instrucao do Pai..."></div>
-						<div class="col-6 col-12-mobile"><input type="text" name="instrucao-mae"
-								placeholder="Digite a instrucao da Mãe..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="profissao-pai"
 								placeholder="Digite a profissao do Pai..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="profissao-mae"
 								placeholder="Digite a profissao da Mãe..."></div>
+						<div class="col-6 col-12-mobile">
+							<select name="instrucao-pai">
+								<option value="Ensino Medio" selected>Selecione o Grau de Instrucao...</option>
+								<option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+								<option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+								<option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+								<option value="Ensino Medio Completo">Ensino Medio Completo</option>
+								<option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+								<option value="Ensino Superior">Ensino Superior</option>
+							</select>
+						</div>
+						<div class="col-6 col-12-mobile">
+							<select name="instrucao-mae">
+								<option value="Ensino Medio" selected>Selecione o Grau de Instrucao...</option>
+								<option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+								<option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+								<option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+								<option value="Ensino Medio Completo">Ensino Medio Completo</option>
+								<option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+								<option value="Ensino Superior">Ensino Superior</option>
+							</select>
+						</div>
 						<div class="col-6 col-12-mobile"><input type="text" name="celular-pai"
 								placeholder="Digite o Celular do Pai..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="celular-mae"
@@ -258,12 +295,40 @@
 								placeholder="Digite cpf da Mãe..."></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="cpf-pai"
 								placeholder="Digite cpf do Pai..."></div>
-						<div>checkbox<input type="checkbox" name="responsavel-pai"></div>
-						<div>checkbox<input type="checkbox" name="responsavel-mae"></div>
-
-						<div class="col-12">
-							<input type="submit" value="MATRICULAR" />
+						<div>
+							<div class="col-6 col-12-mobile">O Pai é o Responsavel?<input class="caixa" type="checkbox"
+									value="Pai-Responsavel">
+							</div>
+							<div class="col-6 col-12-mobile">A Mãe é a Responsavel?<input class="caixa" type="checkbox"
+									value="Mae-Responsavel">
+							</div>
 						</div>
+
+						<div class="separador"></div>
+						<header>
+							<h3>Dados do Curso</h3>
+						</header>
+
+
+						<div class="row">
+							<div class="col-6 col-12-mobile"><input type="text" name="nome-curso"
+									placeholder="Digite o nome do Curso..."></div>
+							<div class="col-6 col-12-mobile"><input type="date" name="dt-ingresso"
+									placeholder="Selecione a Data de Ingresso..."></div>
+							<div class="col-6 col-12-mobile"><input type="text" name="valor-curso"
+									placeholder="Valor do Curso..."></div>
+							<div class="col-6 col-12-mobile">
+								<select name="forma-pgto">
+									<option value="avista" selected>Selecione a forma de pagamento...</option>
+									<option value="A Vista">A Vista</option>
+									<option value="Credito">Credito</option>
+									<option value="Debito">Debito</option>
+									<option value="Pix">Pix</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="MATRICULAR" />
+							</div>
 				</form>
 			</div>
 		</section>
